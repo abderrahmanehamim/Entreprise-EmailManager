@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="103.0" prefWidth="506.0" style="-fx-background-color: transparent;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+   <children>
+      <Pane fx:id="option" layoutY="3.0" prefHeight="574.0" prefWidth="865.0">
+         <children>
+            <TextField fx:id="Sendto" layoutX="166.0" layoutY="89.0" prefHeight="36.0" prefWidth="679.0" promptText="Example@gmail.com" />
+            <TextField fx:id="Subject" layoutX="166.0" layoutY="135.0" prefHeight="38.0" prefWidth="679.0" promptText="Subject" />
+            <Label layoutX="89.0" layoutY="89.0" text="To :" textFill="#fffefe">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="26.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/sendto_30px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="69.0" layoutY="135.0" text="Subject" textFill="#fffefe">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Message" alignment="TOP_LEFT" layoutX="168.0" layoutY="195.0" prefHeight="343.0" prefWidth="679.0" />
+            <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="20.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/elective_50px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="62.0" layoutY="195.0" text="Message" textFill="#fffefe">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="19.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/message_exchange_50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="776.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/send_24px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="Send" layoutX="757.0" layoutY="19.0" prefHeight="52.0" prefWidth="81.0" text=" " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

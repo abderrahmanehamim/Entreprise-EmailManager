@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="594.0" prefWidth="680.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="controllers.ShowMailController">
+   <children>
+      <ImageView fitHeight="26.0" fitWidth="37.0" layoutX="603.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/archive_24px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Send" layoutX="592.0" layoutY="10.0" prefHeight="17.0" prefWidth="49.0" text=" " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="525.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/download-icon-white-png-1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Subject" layoutX="39.0" layoutY="14.0" prefHeight="44.0" prefWidth="479.0" text="Apology for the absence" textFill="#278943">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Send1" layoutX="526.0" layoutY="10.0" prefHeight="26.0" prefWidth="40.0" text=" " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="65.0" layoutY="62.0" style="-fx-background-color: white; -fx-border-radius: 25px;">
+         <children>
+            <Label fx:id="From" layoutX="54.0" layoutY="12.0" prefHeight="26.0" prefWidth="150.0" text="Hiba BELLAFKIH">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Circle fill="DODGERBLUE" layoutX="26.0" layoutY="30.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="Let" layoutX="9.0" layoutY="8.0" prefHeight="44.0" prefWidth="41.0" text="HB">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="time" layoutX="64.0" layoutY="34.0" text="12:23" />
+         </children>
+      </Pane>
+      <ScrollPane layoutX="36.0" layoutY="168.0">
+         <content>
+            <TextArea fx:id="body" prefHeight="410.0" prefWidth="606.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="To" layoutX="78.0" layoutY="128.0" prefHeight="18.0" prefWidth="159.0" text="Label" />
+   </children>
+</AnchorPane>
